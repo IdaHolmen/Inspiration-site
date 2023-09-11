@@ -1,4 +1,11 @@
+body {
+	background-image: url("../mathias-reding-unsplash.jpg");
+	background-color: #cccccc;
+	width: ;
+}
+
 /* Style for the navigation container */
+
 .navigation-container {
 	position: fixed; 
     bottom: 0;
