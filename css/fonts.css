@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Heading Now';
+	src: url('../assets/HeadingNowTrial-04Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Heading Now';
+	src: url('../assets/HeadingNowTrial-65Medium.ttf');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Heading Now';
+	src: url('../assets/HeadingNowTrial-65MediumItalic.ttf');
+	font-weight: 650;
+	font-style: italic;
+}

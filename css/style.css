@@ -1,0 +1,33 @@
+/* Style for the navigation container */
+.navigation-container {
+	position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #333; 
+}
+
+/* Style for the navigation bar itself */
+.navigation__text {
+    font-family: 'Heading Now';
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+}
+
+/* Style for the links within the navigation bar */
+.navigation__text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; 
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.navigation__text a:hover {
+	color: red;
+	font-style: italic;
+}
