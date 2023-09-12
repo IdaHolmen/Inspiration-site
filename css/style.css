@@ -35,7 +35,7 @@ body {
 .navigation__text a {
     text-decoration: none;
     color: white;
-    padding: 10px 20px; 
+    padding: 0.625rem 1.25rem; 
 }
 
 
@@ -132,7 +132,9 @@ h1 {
 
 .page__text {
 	color: white;
-	font-family: 'Heading Now';	
+	font-family: 'Heading Now';
+	font-size: 4rem;	
+	text-shadow: 0.065rem 0.125rem 0.125rem black;
 }
 
 
