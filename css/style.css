@@ -7,9 +7,17 @@ body {
 
 /* Style for the navigation container */
 
-.navigation-container {
+.navigation-container--top {
 	position: fixed; 
     top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: transparent; 
+}
+
+.navigation-container--bottom {
+	position: fixed; 
+    bottom: 0;
     left: 0;
     width: 100%; 
     background-color: transparent; 
@@ -20,7 +28,6 @@ body {
     font-family: 'Heading Now';
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     flex-flow: row nowrap;
 }
 
@@ -115,7 +122,17 @@ h1 {
 	font-style: italic;
 }
 
-/* try to get this code to work by adding a new element */
 
-/* transition: transform .25s ease, width .25s ease, margin .25s ease;
-transform-origin: left center; */
+.page__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.page__text {
+	color: white;
+	font-family: 'Heading Now';	
+}
+
+
