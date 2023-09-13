@@ -26,6 +26,7 @@ body {
 /* Style for the navigation bar itself */
 .navigation__text {
     font-family: 'Heading Now';
+	font-size: 1.25rem;
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
@@ -133,10 +134,14 @@ h1 {
 }
 
 .page__text {
-	color: white;
+	color: #F8C9ED;
+	text-shadow: 0.065rem 0.125rem 0.125rem hotpink;
 	font-family: 'Heading Now';
 	font-size: 4rem;	
-	text-shadow: 0.065rem 0.125rem 0.125rem black;
 }
 
+/* .page__text:hover {
+	color: #F8C9ED;
+	text-shadow: 0.065rem 0.125rem 0.125rem hotpink;
+} */
 
