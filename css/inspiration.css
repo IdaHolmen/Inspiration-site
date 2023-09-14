@@ -1,7 +1,7 @@
 :root {
 	--image-width: 18.75rem;
 	--image-height: 12.5rem;
-	--image-margin: 6rem;
+	--image-margin: 7rem;
 	--back-text: #fff;
 	--back-text-hover: #ff0000;
 	--back-text-style: italic;
@@ -30,6 +30,12 @@ img:hover {
 	height: 100vh; 
 }
 
+h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .back__text {
 	font-family: 'Heading Now';
 	font-size: 4rem;
@@ -40,4 +46,6 @@ img:hover {
 .back__text:hover {
 	color: var(--back-text-hover);
 	font-style: var(--back-text-style);
+	
 }
+
