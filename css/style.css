@@ -3,7 +3,8 @@
 :root {
 	--navigation-background: transparent;
 	--navigation-text: #fff;
-
+	--navigation-text-hover: #ff0000;
+	--font-style-hover: italic;
 }
 
 /* Bakground photo is from unsplash.com by a photographer named Connor Houtman */
@@ -131,8 +132,8 @@ Wobble skew effect for the all the navigation links from https://codepen.io/tech
 /* more hover effects for the navigation links */
 
 .navigation__text a:hover {
-	color: red;
-	font-style: italic;
+	color: var(--navigation-text-hover);
+	font-style: var(--font-style-hover);
 }
 
 /* Centering of main title */
