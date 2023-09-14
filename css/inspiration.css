@@ -18,6 +18,11 @@ img {
 	margin: var(--image-margin);
 }
 
+img:hover {
+	border: 0.25rem solid #fff;
+	border-radius: 0.625rem;
+}
+
 .image__links {
 	display: flex;
 	justify-content: center;
