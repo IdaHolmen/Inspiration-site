@@ -1,7 +1,13 @@
+:root {
+	--image-width: 18.75rem;
+	--image-height: 12.5rem;
+	--image-margin: 6.5rem;
+}
+
 img {
-	width: 18.75rem;
-	height: 12.5rem;
-	margin: 8rem;
+	width: var(--image-width);
+	height: var(--image-height);
+	margin: var(--image-margin);
 }
 
 .image__links {
@@ -10,15 +16,4 @@ img {
 	align-items: center;
 	height: 100vh; 
 }
-/* 
-.image__links--top {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row nowrap;
-}
 
-.image__links--bottom {
-	display: flex;
-	justify-content: center;
-	flex-flow: row nowrap;
-} */
