@@ -1,3 +1,11 @@
+/* Variables */
+
+:root {
+	--navigation-background: transparent;
+	--navigation-text: #fff;
+
+}
+
 /* Bakground photo is from unsplash.com by a photographer named Connor Houtman */
 
 body {
@@ -14,7 +22,7 @@ body {
     top: 0;
     left: 0;
     width: 100%; 
-    background-color: transparent; 
+    background-color: var(--navigation-background); 
 }
 
 /* Style for the bottom navigation container */
@@ -24,7 +32,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%; 
-    background-color: transparent; 
+    background-color: var(--navigation-background); 
 }
 
 /* Style for the navigation bar itself */
@@ -39,7 +47,7 @@ body {
 /* Style for the links within the navigation bar */
 .navigation__text a {
     text-decoration: none;
-    color: white;
+    color: var(--navigation-text);
     padding: 0.625rem 1.25rem; 
 }
 /***********************************************************
@@ -119,10 +127,6 @@ Wobble skew effect for the all the navigation links from https://codepen.io/tech
 	animation-iteration-count: 1;
   }
 
-/* font weight for all h1's */
-h1 {
-    font-weight: 600;
-}
 
 /* more hover effects for the navigation links */
 
