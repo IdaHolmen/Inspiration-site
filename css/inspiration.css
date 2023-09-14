@@ -1,4 +1,24 @@
 img {
 	width: 18.75rem;
 	height: 12.5rem;
+	margin: 8rem;
 }
+
+.image__links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; 
+}
+/* 
+.image__links--top {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+}
+
+.image__links--bottom {
+	display: flex;
+	justify-content: center;
+	flex-flow: row nowrap;
+} */
