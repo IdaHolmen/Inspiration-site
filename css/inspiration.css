@@ -28,6 +28,7 @@ img:hover {
 	justify-content: center;
 	align-items: center;
 	height: 100vh; 
+	position: relative;
 }
 
 h1 {
@@ -49,3 +50,10 @@ h1 {
 	
 }
 
+.link__display-on-hover {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	color: #fff;
+
+}
