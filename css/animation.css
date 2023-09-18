@@ -1,7 +1,7 @@
 :root {
 	--image-width: 18.75rem;
 	--image-height: 12.5rem;
-	--image-margin: 7rem;
+	--image-margin: 6rem;
 	--back-text: #fff;
 	--back-text-hover: #ff0000;
 	--back-text-style: italic;
@@ -10,12 +10,15 @@
 body {
 	background-image: linear-gradient(black, #343434);
 	background-size: cover;
+	margin: 0;
 }
 
 img {
 	width: var(--image-width);
 	height: var(--image-height);
 	margin: var(--image-margin);
+	border: 0.25rem solid transparent;
+	border-radius: 0.625rem;	
 }
 
 img:hover {
@@ -26,15 +29,22 @@ img:hover {
 .image__links {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
 	height: 100vh; 
 	position: relative;
 }
 
-h1 {
+
+.back__container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: var(--image-height);
+	margin: var(--image-margin);
+	position: absolute;
+	left: auto;
+	right: auto;
+	margin: 18.75rem auto;
 }
 
 .back__text {
@@ -42,6 +52,9 @@ h1 {
 	font-size: 5rem;
 	color: var(--back-text);
 	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	margin: 0;
 }
 
 .back__text:hover {
@@ -50,10 +63,5 @@ h1 {
 	
 }
 
-.link__display-on-hover {
-	position: absolute;
-	top:50%;
-	left: 50%;
-	color: #fff;
-}
+
 
