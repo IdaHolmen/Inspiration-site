@@ -1,12 +1,3 @@
-:root {
-	--image-width: 18.75rem;
-	--image-height: 12.5rem;
-	--image-margin: 6rem;
-	--back-text: #fff;
-	--back-text-hover: #ff0000;
-	--back-text-style: italic;
-}
-
 body {
 	background-image: linear-gradient(black, #343434);
 	background-size: cover;

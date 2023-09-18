@@ -1,13 +1,5 @@
-/* Variables */
 
-:root {
-	--navigation-background: transparent;
-	--navigation-text: #fff;
-	--navigation-text-hover: #ff0000;
-	--font-style-hover: italic;
-}
-
-/* Bakground photo is from unsplash.com by a photographer named Connor Houtman */
+/* Background photo is from unsplash.com by a photographer named Connor Houtman */
 
 body {
 	background-image: url("../assets/connor-houtman-unsplash.jpg");
