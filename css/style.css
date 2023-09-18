@@ -55,7 +55,7 @@ body {
 /* hover effects for the navigation links */
 
 .navigation__text a:hover {
-	transform: skew(15deg);
+	transform: skew(25deg);
 	color: var(--navigation-text-hover);
 	font-style: var(--font-style-hover);
 }
