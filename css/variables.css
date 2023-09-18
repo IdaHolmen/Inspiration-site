@@ -1,0 +1,12 @@
+:root {
+	--image-width: 18.75rem;
+	--image-height: 12.5rem;
+	--image-margin: 6rem;
+	--back-text: #fff;
+	--back-text-hover: #ff0000;
+	--back-text-style: italic;
+	--navigation-background: transparent;
+	--navigation-text: #fff;
+	--navigation-text-hover: #ff0000;
+	--font-style-hover: italic;
+}
