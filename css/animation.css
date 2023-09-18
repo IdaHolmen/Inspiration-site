@@ -17,13 +17,15 @@ img:hover {
 	border-radius: 0.625rem;
 }
 
-.image__links {
+.image__container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	height: 100vh; 
 	position: relative;
 }
+
+
 
 
 .back__container {
@@ -50,9 +52,13 @@ img:hover {
 
 .back__text:hover {
 	color: var(--back-text-hover);
-	font-style: var(--back-text-style);
+	transform: skew(15deg);
 	
 }
+
+
+
+
 
 
 
