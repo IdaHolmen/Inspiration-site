@@ -25,9 +25,6 @@ img:hover {
 	position: relative;
 }
 
-
-
-
 .back__container {
 	display: flex;
 	justify-content: center;
@@ -48,12 +45,12 @@ img:hover {
 	text-align: center;
 	width: 100%;
 	margin: 0;
+	transition: color 0.2s ease;
 }
 
 .back__text:hover {
 	color: var(--back-text-hover);
 	transform: skew(15deg);
-	
 }
 
 
