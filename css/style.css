@@ -42,7 +42,7 @@ body {
     text-decoration: none;
     color: var(--navigation-text);
     padding: 0.625rem 1.25rem; 
-	transition: color 0.2s ease, transform 0,3s ease;
+	transition: color 0.2s ease;
 }
 
 /* hover effects for the navigation links */
