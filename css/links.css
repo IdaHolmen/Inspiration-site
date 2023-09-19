@@ -1,57 +1,89 @@
 body {
 	background-image: linear-gradient(black, #343434);
-	background-size: cover;
-	margin: 0;
-}
-
-img {
+	  background-size: cover;
+	  margin: 0;
+  }
+  
+  .image__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100vh;
+  }
+  
+  /* Beholder for både bilde-div og link-div */
+  .image__links {
 	width: var(--image-width);
 	height: var(--image-height);
 	margin: var(--image-margin);
 	border: 0.25rem solid transparent;
-	border-radius: 0.625rem;	
-}
-
-img:hover {
+	border-radius: 0.625rem;
+	position: relative;
+  }
+  
+  /* Ramme på hovedbeholderen når man hover */
+  .image__links:hover {
 	border: 0.25rem solid #fff;
 	border-radius: 0.625rem;
-}
-
-.image__container {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	height: 100vh; 
-	position: relative;
-}
-
-.back__container {
+  }
+  
+  /* Viser link-diven når man hover over "hovedbeholderen" */
+  .image__links:hover .link__container {
+	opacity: 1;
+  }
+  
+  /* Bilde- og link-div fyller beholderen 100% */
+  .image,
+  .link__container {
+	  width: 100%;
+	  height: 100%;
+  }
+  
+  /* Link-containeren settes som posisjon absolutt, som gjør at den legger seg øverst i venstre hjørne av hovedbeholderen, foran bilde-diven. */
+  /* Bilde og link-containerne er nå oppå hverandre og er akkurat like store */
+  /* Vi skjuler link-containeren med opacity: 0 helt til noen hover over beholderen */
+  .link__container {
+	position: absolute;
+	background: hsla(204, 8%, 76%, 0.292);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: var(--image-height);
-	margin: var(--image-margin);
-	position: absolute;
-	left: auto;
-	right: auto;
-	margin: 18.75rem auto;
-}
-
-.back__text {
-	font-family: 'Mohave';
-	font-size: 5rem;
-	color: var(--back-text);
-	text-decoration: none;
-	text-align: center;
+	opacity: 0;
+  }
+  
+  /* Bildet fyller 100% av bilde-containeren */
+  .image img {
 	width: 100%;
-	margin: 0;
-	transition: color 0.2s ease;
-}
-
-.back__text:hover {
-	color: var(--back-text-hover);
-	transform: skew(15deg);
-}
+	height: 100%;
+  }
+  
+  .back__container {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: var(--image-height);
+	  margin: var(--image-margin);
+	  position: absolute;
+	  left: auto;
+	  right: auto;
+	  margin: 18.75rem auto;
+  }
+  
+  .back__text {
+	  font-family: 'Mohave';
+	  font-size: 3rem;
+	  color: var(--back-text);
+	  text-decoration: none;
+	  text-align: center;
+	  width: 100%;
+	  margin: 0;
+	  transition: color 0.2s ease;
+  }
+  
+  .back__text:hover {
+	  color: var(--back-text-hover);
+	  transform: skew(15deg);
+  }
 
 
 

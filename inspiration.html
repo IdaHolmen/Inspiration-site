@@ -1,54 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inspiration sites</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspiration sites</title>
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/links.css">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/links.css" />
+  </head>
+
+  <body>
+    <!-- four images with links to the different inspiration sites -->
+    <main class="image__container">
 
 
-<body>
+      <!-- Strukturendring. 4x Hovedbeholder "image__links" med en link-div og en bilde-div i seg, de er søsken -->
+      <div class="image__links">
+        <div class="link__container">
+          <a target="_blank" href="https://aintnotrash.com/en"
+            >Ain't no trash</a
+            >
+        </div>
+        <div class="image">
+          <img
+            src="../230911-inspiration-site-html/assets/aint-no-trash.png"
+            alt="screenshot from aintnotrash.com"
+          />
+        </div>
+      </div>
 
-	<!-- four images with links to the different inspiration sites -->
-	<main class="image__container">
+      <div class="image__links">
+        <div class="link__container">
+          <a
+            target="_blank"
+            href="https://prettybird.co/us/"
+            class="custom__link"
+          >
+            Pretty Bird
+          </a>
+        </div>
+        <div class="image">
+          <img
+            src="../230911-inspiration-site-html/assets/prettybird.png"
+            alt="screenshot from https://prettybird.co/us/"
+          />
+        </div>
+      </div>
 
-		<div>
-			<a target="_blank" href="https://aintnotrash.com/en" >
-			<img src="../230911-inspiration-site-html/assets/aint-no-trash.png" alt="screenshot from aintnotrash.com">
-			</a>
-		</div>
-			
-			
-		<div class="image_links">
-			<a target="_blank" href="https://prettybird.co/us/" class="custom__link">
-			<img src="../230911-inspiration-site-html/assets/prettybird.png" alt="screenshot from https://prettybird.co/us/">
-			</a>
-		</div>
-		
-		
-		<div class="image__links">
-			<a target="_blank" href="https://bam-works.com/" class="custom__link">
-			<img src="../230911-inspiration-site-html/assets/BAM-screenshot.png" alt="screenshot from https://bam-works.com/">
-			</a>
-		</div>	
+      <div class="image__links">
+        <div class="link__container">
+          <a target="_blank" href="https://bam-works.com/" class="custom__link">
+            Bam Works
+          </a>
+        </div>
+        <div class="image">
+          <img
+            src="../230911-inspiration-site-html/assets/BAM-screenshot.png"
+            alt="screenshot from https://bam-works.com/"
+          />
+        </div>
+      </div>
 
-		
-		<div class="image__links">
-			<a target="_blank" href="https://lusion.co/" class="custom__link">
-			<img src="../230911-inspiration-site-html/assets/Lusion-screenshot.png" alt="screenshot from https://lusion.co/">
-			</a>
-		</div>
+      <div class="image__links">
+        <div class="link__container">
+          <a target="_blank" href="https://lusion.co/" class="custom__link"
+            >Lusion
+          </a>
+        </div>
+        <div class="image">
+          <img
+            src="../230911-inspiration-site-html/assets/Lusion-screenshot.png"
+            alt="screenshot from https://lusion.co/"
+          />
+        </div>
+      </div>
 
-		<div class="back__container">
-			<a href="index.html" class="back__text"><h1>back</h1></a>
-		</div>
-
-	</main>
-</body>
+      <div class="back__container">
+        <a href="index.html" class="back__text"><h1>back</h1></a>
+      </div>
+    </main>
+  </body>
 </html>
