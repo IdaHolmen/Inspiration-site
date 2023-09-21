@@ -6,67 +6,123 @@ body {
 	background-color: #cccccc;
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: 'Mohave';
 }
 
-/* Style for the top navigation container */
 
-.navigation-container--top {
-	position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%; 
-    background-color: var(--navigation-background); 
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 9.063rem);
 }
-
-/* Style for the bottom navigation container */
-
-.navigation-container--bottom {
-	position: fixed; 
-    bottom: 0;
-    left: 0;
-    width: 100%; 
-    background-color: var(--navigation-background); 
-}
-
-/* Style for the navigation bar itself */
-.navigation__text {
-    font-family: 'Mohave';
-	font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-}
-
-/* Style for the links within the navigation bar */
-.navigation__text a {
+.container a {
     text-decoration: none;
     color: var(--navigation-text);
-    padding: 0.625rem 1.25rem; 
 	transition: color 0.2s ease;
+	font-size: 3rem;
+	font-weight: 600;
+
 }
 
-/* hover effects for the navigation links */
-
-.navigation__text a:hover {
-	transform: skew(25deg);
+.container a:hover {
 	color: var(--navigation-text-hover);
 	font-style: var(--font-style-hover);
-}
+} 
 
-/* Centering of main title */
-.page__title {
+.link__inspiration {
+	grid-column: 1/2;
+	grid-row: 1/2;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	height: 100vh;
 }
 
-/* Styling for main title */
+.link__design {
+	grid-column: 5/6;
+	grid-row: 1/2;
+}
+
+.link__animation {
+	grid-column: 1/2;
+	grid-row: 5/6;	
+	display: flex;
+	justify-content: center;
+}
+
+.link__flex {
+	grid-column: 3/4;
+	grid-row: 5/6;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.link__color {
+	grid-column: 5/6;
+	grid-row: 5/6;
+}
+
 .page__text {
+	grid-column: 3/4;
+	grid-row: 3/4;
 	color: #F8C9ED;
 	text-shadow: 0.065rem 0.125rem 0.125rem hotpink;
 	font-family: 'Mohave';
-	font-size: 5rem;	
+	font-size: 5.5rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+@media only screen and (min-width: 721px) and (max-width: 1024px){
+	body {
+		background-image: url(../assets/connor-houtman-tablet-unsplash.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
 
+@media only screen and (min-width: 480px) and (max-width: 720px){
+	body {
+		background-image: url(../assets/connor-houtman-mobile-unsplash.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(5, 145px);
+	}
+	.container a {
+		font-size: 2.5rem;
+	}
+	.link__inspiration {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.link__design {
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
+	.link__animation {
+		grid-column: 1/2;
+		grid-row: 5/6;	
+	}
+	.link__flex {
+		grid-column: 2/3;
+		grid-row: 5/6;
+	}
+	.link__color {
+		grid-column: 3/4;
+		grid-row: 5/6;
+	}
+	.page__text {
+		grid-column: 2/3;
+		grid-row: 3/4;
+		font-size: 3.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
