@@ -6,9 +6,11 @@ body {
   }
   
 .image__container {
+	width: 87.5rem;
+	height: 46.875rem;
 	display: grid;
-	grid-template-columns: repeat(7, 200px);
-	grid-template-rows: repeat(5, 150px);
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 	align-items: center;
 	justify-items: center;
   }
