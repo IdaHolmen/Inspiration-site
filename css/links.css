@@ -90,13 +90,12 @@ body {
 	  font-size: 5rem;
 	  color: var(--back-text);
 	  text-decoration: none;
-	  transition: color 0.2s ease;
 	  font-weight: 600;
 	}
   
 .back__text:hover {
 	  color: var(--back-text-hover);
-	  font-style: var(--font-style-hover);
+	  transition: skewX(-15deg);
 	}
 
 
